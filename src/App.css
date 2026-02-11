@@ -1,0 +1,40 @@
+/* Center everything on the screen */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+/* Input styling */
+.container input {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Button styling */
+.container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container button:hover{
+  background: green;
+}
+
+/* QR section spacing */
+.qr-section {
+  margin-top: 20px;
+}
+
+/* Token text styling */
+.token-text {
+  margin-top: 10px;
+  font-size: 12px;
+  word-break: break-all;
+  max-width: 250px;
+}
