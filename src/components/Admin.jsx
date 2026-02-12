@@ -26,7 +26,7 @@ function AdminQR() {
   }
     try {
       const response = await axios.post(
-       "http://localhost:8080/api/session/create?sessionName=Test&validMinutes=5",
+        `${BASE_URL}/api/session/create`,
         null,
         {
           params: {
@@ -46,7 +46,7 @@ function AdminQR() {
   const fetchAttendance = async () => {
   if (!sessionId) return;
 
-  const response = await fetch(`/api/attendance/session/${sessionId}`);
+  const response = await fetch(`${BASE_URL}/api/attendance/session/${sessionId}`);
   const data = await response.json();
   setAttendanceList(data);
 };
