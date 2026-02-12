@@ -44,7 +44,7 @@ function StudentScanner() {
   try {
     const deviceId = getDeviceId();
 
-      const response = await fetch(`/api/attendance/mark?rollNo=${rollNo.trim()}&name=${name.trim()}&token=${token.trim()}&deviceId=${deviceId}`, {
+      const response = await fetch(`${BASE_URL}/api/attendance/mark?rollNo=${rollNo.trim()}&name=${name.trim()}&token=${token.trim()}&deviceId=${deviceId}`, {
       method: "POST"
     });
 
