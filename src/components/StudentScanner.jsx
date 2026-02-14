@@ -10,6 +10,8 @@ function StudentScanner() {
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
 
+  const BASE_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const scanner = new Html5QrcodeScanner(
       "reader",

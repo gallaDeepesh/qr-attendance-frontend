@@ -12,7 +12,7 @@ function AdminQR() {
   const [sessionId, setSessionId] = useState(null);
   const [token, setToken] = useState("");
 
-
+  const BASE_URL = import.meta.env.VITE_API_URL;
 
   const createSession = async () => {
     if (!sessionName.trim()) {
@@ -25,6 +25,7 @@ function AdminQR() {
     return;
   }
     try {
+      console.log("API URL:", import.meta.env.VITE_API_URL);
       const response = await axios.post(
         `${BASE_URL}/api/session/create`,
         null,
