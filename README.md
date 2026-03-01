@@ -340,11 +340,13 @@ Environment variables used for production safety.
 📸 Screenshots
 
 ---
- home page 
-![alt text](<Screenshot 2026-03-01 115526.png>) 
+## 📸 Screenshots
 
-admin page
-![alt text](<Screenshot 2026-03-01 115501.png>) 
+### Home Page
+<img src="src/images/home.png" width="800"/>
 
-student page after scanning the Qr
-![alt text](<Screenshot 2026-03-01 115501-1.png>)
+### Admin page
+<img src="src/images/scan.png" width="800"/>
+
+### Student Page
+<img src="src/images/attendance.png" width="800"/>
