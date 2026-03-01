@@ -138,7 +138,7 @@ Admin dashboard auto-refreshes attendance list.
 
 
 * Frontend → Vercel
-* Backend → Koyeb
+* Backend → render
 * Database → Railway
   
 
